@@ -74,8 +74,6 @@
     top: 123px;
     background: url("img/dude.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     align-items: center;
     justify-content: left;
 }
@@ -796,4 +794,8 @@
 
 .footer__bottom li {
     color: rgba(255, 255, 255, 0.5);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ab9639292ea480fa189f1ec786c66b94cb6478f6
