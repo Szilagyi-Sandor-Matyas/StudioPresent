@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     color: white;
     letter-spacing: 0%;
 }
@@ -46,10 +46,16 @@
     height: 30px;
     background-color: rgba(37, 37, 37, 1);
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     font-size: 14px;
     text-align: center;
     align-items: center;
+}
+
+.header__bottom__content-box {
+    width: 1319px;
+    display: flex;
+    justify-content: right;
 }
 
 .header__open {
@@ -58,7 +64,6 @@
 
 .header__open-time {
     font-weight: 400;
-    margin-right: 18.5rem;
 }
 
 .hero {
@@ -67,7 +72,10 @@
     height: 679px;
     left: -18px;
     top: 123px;
-    background: url('img/dude.jpg');
+    background: url("img/dude.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: left;
 }
@@ -99,7 +107,7 @@
 }
 
 .hero__title {
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed";
     font-weight: 700;
     font-size: 38px;
 }
@@ -278,7 +286,7 @@
 }
 
 .grill-course__list-item::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 11px;
@@ -306,10 +314,6 @@
 
 .button--white:hover {
     background-color: rgb(233, 218, 218);
-}
-
-.grill-course__image-box {
-    display: flex;
 }
 
 .handwerk {
@@ -389,7 +393,7 @@
 
 .spices__box {
     display: flex;
-    width: 960px;
+    width: 50%;
     height: 705px;
     align-items: center;
 }
@@ -443,7 +447,7 @@
     display: flex;
     width: 100%;
     height: 537px;
-    background: url('img/meats.jpg') no-repeat center center;
+    background: url("img/meats.jpg") no-repeat center center;
     background-color: rgba(0, 0, 0, 0.94);
     align-items: center;
     justify-content: center;
@@ -536,7 +540,7 @@
     font-size: 15px;
     color: rgba(255, 255, 255, 0.51);
     line-height: 29px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     height: 181px;
 }
 
@@ -562,7 +566,7 @@
 
 .awards__picture-text-box div:nth-child(4) {
     width: 121px;
-    gap: 15px
+    gap: 15px;
 }
 
 .reviews {
@@ -594,13 +598,33 @@
 }
 
 .reviews__container {
+    flex: 1;
     display: flex;
-    width: 1095px;
-    height: 414px;
     gap: 16px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 91px;
+}
+
+.review__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+}
+
+.reviews__container-wrapper {
+    position: relative;
+    width: 1095px;
+    margin-left: 395px;
+    margin-right: 395px;
+    display: flex;
+    align-items: center;
 }
 
 .reviews__container__black-box {
@@ -670,8 +694,30 @@
     height: 19px;
     margin-top: 7px;
 }
+
 .reviews__container__grey-box :nth-child(6) {
     margin-left: 368px;
+}
+
+/* Add classes for active state */
+.reviews__container__black-box.active {
+    width: 429px;
+    height: 414px;
+}
+
+.reviews__container__grey-box.active {
+    width: 429px;
+    height: 414px;
+}
+
+.reviews__container__black-box.side {
+    width: 317px;
+    height: 257px;
+}
+
+.reviews__container__grey-box.side {
+    width: 317px;
+    height: 257px;
 }
 
 .footer {
@@ -687,18 +733,67 @@
     height: 147px;
     background: rgba(181, 0, 20, 1);
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.footer__top-container {
+    width: 1323px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-left: 132px;
+}
+
+.footer__top__text-box {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.footer__top-desc {
+    width: 192px;
+    height: 112px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer__media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 9px;
+}
+
+.footer__media:first-child {
+    margin-right: 6px;
 }
 
 .footer__bottom {
     display: flex;
     width: 100%;
-    height: 27px;
+    height: 28px;
     background: rgba(102, 0, 11, 1);
-    align-items: center;
-    color: rgba(255,255,255, 0.5);
     justify-content: space-around;
     font-weight: 200;
     font-size: 12px;
     line-height: 28px;
+}
+
+.footer__bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 1323px;
+    height: 25px;
+}
+
+.footer__bottom li {
+    color: rgba(255, 255, 255, 0.5);
 }

@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,10 +31,13 @@
             </ul>
         </div>
         <div class="header__bottom">
-            <img src="img/clock.png" alt="Clock" width="15px" height="15px"><span class="header__open">Opentime:</span>
-            <span class="header__open-time">Di. - Fr.: 07:00-13:00
-                und 15:00-18:30.
-                Sa.: 07:30 - 12:30 </span>
+            <div class="header__bottom__content-box">
+                <img src="img/clock.png" alt="Clock" width="15px" height="15px"><span
+                    class="header__open">&nbsp;&nbsp;Opentime:</span>
+                <span class="header__open-time">&nbsp;&nbsp;Di. - Fr.: 07:00-13:00
+                    und 15:00-18:30.
+                    &nbsp;Sa.: &nbsp;07:30 - 12:30 </span>
+            </div>
         </div>
     </header>
     <section class="hero">
@@ -109,9 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="grill-course__image-box">
-            <img src="img/food.jpg" alt="Food" width="960px" height="642px">
-        </div>
+        <img src="img/food.jpg" alt="Food" width="50%" height="642px">
     </section>
     <section class="handwerk">
         <div class="handwerk__box">
@@ -222,60 +224,142 @@
             <div class="title__text">
                 Was die Leute über uns sagen
             </div>
-            <div class="reviews__container">
-                <div class="reviews__container__black-box">
-                    <div>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in
-                        reprehenderit Guten Tag mollit anim Stuttgart.</div>
-                    <div>Maria Kartofeln</div>
-                </div>
-                <div class="reviews__container__grey-box">
-                    <img src="img/grillkurs.png" alt="Grill" width="80px" height="80px">
-                    <img src="img/stars.png" alt="Stars" width="92px" height="30px">
-                    <div>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore
-                        &nbsp; et dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</div>
-                    <div>
-                        Halling Tobias
+            <div class="reviews__container-wrapper" style="position:relative; width:1095px;">
+                <button id="reviewsLeftBtn" class="review__button"
+                    style="position:absolute; left:-50px; top:50%; transform:translateY(-50%); z-index:2;">
+                    <img src="img/button_left.png" alt="Left" width="32px" height="32px">
+                </button>
+                <div class="reviews__container">
+                    <div class="reviews__container__black-box">
+                        <div>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in
+                            reprehenderit Guten Tag mollit anim Stuttgart.</div>
+                        <div>Maria Kartofeln</div>
                     </div>
-                    <div>
-                        Koch
+                    <div class="reviews__container__grey-box">
+                        <img src="img/grillkurs.png" alt="Grill" width="80px" height="80px">
+                        <img src="img/stars.png" alt="Stars" width="92px" height="30px">
+                        <div>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore
+                            &nbsp; et dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</div>
+                        <div>
+                            Halling Tobias
+                        </div>
+                        <div>
+                            Koch
+                        </div>
+                        <div>
+                            <img src="img/quote.png" alt="Quote" width="45px" height="36px">
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/quote.png" alt="Quote" width="45px" height="36px">
+                    <div class="reviews__container__black-box">
+                        <div>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm
+                            expetenda nam an, his ei Reise euismod assentior.</div>
+                        <div>Rene Weinstein</div>
                     </div>
                 </div>
-                <div class="reviews__container__black-box">
-                    <div>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm
-                        expetenda nam an, his ei Reise euismod assentior.</div>
-                    <div>Rene Weinstein</div>
-                </div>
+                <button id="reviewsRightBtn" class="review__button"
+                    style="position:absolute; right:-50px; top:50%; transform:translateY(-50%); z-index:2;">
+                    <img src="img/button_right.png" alt="Right" width="32px" height="32px">
+                </button>
             </div>
-            <div>
-                <button class="button button--red">Alle Berichte</button>
-            </div>
+                    <div>
+            <button class="button button--red">Alle Berichte</button>
+        </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__top">
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div><img src="img/logo.png" alt="Logo" width="131px" height="131px"></div>
-            <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <div class="footer__top-container">
+                <div class="footer__top__text-box">
+                    <img src="img/icons.png" alt="Icons" width="16px" height="112px">
+                    <div class="footer__top-desc">
+                        Klauprechtstraße 25
+                        76137 Karlsruhe, Germany
+                        +49 721 358060
+                        info@partyservice-brath.de
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="Logo" width="131px" height="131px">
+                </div>
+                <ul class="footer__media">
+                    <li>Besuchen Sie uns auf:</li>
+                    <li><img src="img/x.png" alt="Twitter" width="40px" height="40px"></li>
+                    <li><img src="img/facebook.png" alt="Facebook" width="40px" height="40px"></li>
+                    <li><img src="img/insta.png" alt="Instagram" width="40px" height="40px"></li>
+                    <li><img src="img/yt.png" alt="Youtube" width="40px" height="40px"></li>
                 </ul>
-
             </div>
         </div>
         <div class="footer__bottom">
-            <div>© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</div>
-            <div>Code and design by <span><i><ins>StudioPresent</ins></i></span></div>
+            <ul>
+                <li>© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</li>
+                <li>Code and design by <span><i><ins>StudioPresent-Matyi</ins></i></span></li>
+            </ul>
         </div>
+        <script>
+            (function () {
+                // Get the container and boxes
+                const container = document.querySelector('.reviews__container');
+                const blackBoxes = Array.from(container.querySelectorAll('.reviews__container__black-box'));
+                const greyBox = container.querySelector('.reviews__container__grey-box');
+
+                // All boxes
+                const allBoxes = [blackBoxes[0], greyBox, blackBoxes[1]];
+
+                // State: 1 (default), 2 (left), 3 (right)
+                let state = 1;
+
+                // Function to update the DOM based on the state
+                function updateState() {
+                    // Clear the container
+                    while (container.firstChild) {
+                        container.removeChild(container.firstChild);
+                    }
+
+                    // Re-arrange based on state
+                    if (state === 1) { // Default: 1 2 3
+                        container.appendChild(allBoxes[0]);
+                        container.appendChild(allBoxes[1]);
+                        container.appendChild(allBoxes[2]);
+                    } else if (state === 2) { // Left: 2 3 1
+                        container.appendChild(allBoxes[1]);
+                        container.appendChild(allBoxes[2]);
+                        container.appendChild(allBoxes[0]);
+                    } else if (state === 3) { // Right: 3 1 2
+                        container.appendChild(allBoxes[2]);
+                        container.appendChild(allBoxes[0]);
+                        container.appendChild(allBoxes[1]);
+                    }
+                }
+
+                // Initial state setup
+                updateState();
+
+                // Left button click handler
+                document.getElementById('reviewsLeftBtn').onclick = function () {
+                    if (state === 1) {
+                        state = 2;
+                    } else if (state === 2) {
+                        state = 3;
+                    } else if (state === 3) {
+                        state = 1;
+                    }
+                    updateState();
+                };
+
+                // Right button click handler
+                document.getElementById('reviewsRightBtn').onclick = function () {
+                    if (state === 1) {
+                        state = 3;
+                    } else if (state === 3) {
+                        state = 2;
+                    } else if (state === 2) {
+                        state = 1;
+                    }
+                    updateState();
+                };
+            })();
+        </script>
 </body>
 
 </html>
